@@ -2,7 +2,7 @@ package io.github.psgs.serverutils.perks;
 
 /**
  * FestiveArrows | FestiveArrows Plugin
- * 
+ *
  * @author YukonAppleGeek
  */
 
@@ -20,22 +20,22 @@ import org.bukkit.inventory.meta.FireworkMeta;
 
 public class FestiveArrows implements Listener {
 
-	@EventHandler
-	public void onBowShoot(EntityShootBowEvent event) {
-		FireworkMeta fireworkMeta = (FireworkMeta) (new ItemStack(
-				Material.FIREWORK)).getItemMeta();
-		Firework firework = (Firework) event
-				.getProjectile()
-				.getLocation()
-				.getWorld()
-				.spawnEntity(event.getProjectile().getLocation(),
-						EntityType.FIREWORK);
+    @EventHandler
+    public void onBowShoot(EntityShootBowEvent event) {
+        FireworkMeta fireworkMeta = (FireworkMeta) (new ItemStack(
+                Material.FIREWORK)).getItemMeta();
+        Firework firework = (Firework) event
+                .getProjectile()
+                .getLocation()
+                .getWorld()
+                .spawnEntity(event.getProjectile().getLocation(),
+                        EntityType.FIREWORK);
 
-		fireworkMeta.addEffect(FireworkEffect.builder().with(Type.BURST)
-				.withColor(Color.RED).withColor(Color.WHITE)
-				.withColor(Color.BLUE).withTrail().build());
-		firework.setFireworkMeta(fireworkMeta);
-		event.getProjectile().setPassenger(firework);
-	}
+        fireworkMeta.addEffect(FireworkEffect.builder().with(Type.BURST)
+                .withColor(Color.RED).withColor(Color.WHITE)
+                .withColor(Color.BLUE).withTrail().build());
+        firework.setFireworkMeta(fireworkMeta);
+        event.getProjectile().setPassenger(firework);
+    }
 
 }
