@@ -11,6 +11,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.FireworkMeta;
+import org.bukkit.Effect;
+import org.bukkit.Material;
 
 public class PartyCommand implements CommandExecutor {
 
@@ -24,20 +26,11 @@ public class PartyCommand implements CommandExecutor {
 
         final String name = plugin.getConfig().getString("hubWorld");
         World w = Bukkit.getServer().getWorld(name);
+        Location hub = new Location(w, -526.5, 61, -187.5);
 
         if (cmd.getName().equalsIgnoreCase("party")) {
             if (sender.isOp() || sender.hasPermission("utils.party")) {
-                /*w.playEffect(Effect.STEP_SOUND, 79);
-
-                FireworkMeta fireworkMeta = (FireworkMeta) (new ItemStack(
-                        Material.FIREWORK)).getItemMeta();
-
-                Firework firework = Bukkit.getWorld(name).spawnEntity(EntityType.FIREWORK);
-
-                fireworkMeta.addEffect(FireworkEffect.builder().with(FireworkEffect.Type.BURST)
-                        .withColor(Color.RED).withColor(Color.WHITE)
-                        .withColor(Color.BLUE).withTrail().build());
-                firework.setFireworkMeta(fireworkMeta);*/
+                w.playEffect(hub, Effect.STEP_SOUND, 29);
 
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");
