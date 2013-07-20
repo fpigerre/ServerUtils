@@ -27,8 +27,17 @@ public class CreditCommand implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("credits")) {
             if (sender.isOp() || sender.hasPermission("utils.credits")) {
-                //Return balance
+                if (args[0] == null) {
+                    //Return balance
+                    final String player = sender.getName();
+                    sender.sendMessage(ChatColor.GOLD + "You have " + ChatColor.AQUA + plugin.econ.getBalance(player) + ChatColor.GOLD + " credits!");
+                } else {
+                    //Return balance
+                    final String player = args[0];
+                    sender.sendMessage(ChatColor.GOLD + player + " has " + ChatColor.AQUA + plugin.econ.getBalance(player) + ChatColor.GOLD + " credits!");
+                }
             }
         }
+        return false;
     }
 }

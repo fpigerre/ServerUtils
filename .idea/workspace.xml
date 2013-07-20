@@ -15,7 +15,7 @@
     <file path="/CurrentEditMode.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374137190031" ignored="false" />
     <file path="/HorseDamageListener.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374135003493" ignored="false" />
     <file path="/HorseInteractListener.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374136417162" ignored="false" />
-    <file path="/CreditCommand.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374285277974" ignored="false" />
+    <file path="/CreditCommand.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374295386258" ignored="false" />
     <file path="/plugin.yml" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374276002348" ignored="false" />
     <file path="/pom.xml" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374276089346" ignored="false" />
     <file path="/RealEconomy.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374284647929" ignored="false" />
@@ -82,8 +82,10 @@
       <file leaf-file-name="CreditCommand.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/CreditCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="33" selection-start="461" selection-end="461" vertical-scroll-proportion="0.36772045">
-              <folding />
+            <state line="40" column="21" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.76870745">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -420,7 +422,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1305" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -434,7 +436,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -616,8 +618,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/CreditCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="461" selection-end="461" vertical-scroll-proportion="0.36772045">
-          <folding />
+        <state line="40" column="21" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.76870745">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
