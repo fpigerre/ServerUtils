@@ -2,24 +2,34 @@ package io.github.psgs.serverutils;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.RegisteredServiceProvider;
 
 import io.github.psgs.serverutils.horseprotection.*;
+
+import net.milkbowl.vault.economy.Economy;
+import net.milkbowl.vault.economy.EconomyResponse;
+import net.milkbowl.vault.permission.Permission;
 
 public class ServerUtils extends JavaPlugin {
 
     ServerUtils plugin;
 
-    public void ServerUtils(ServerUtils plugin)
-    {
+    public void ServerUtils(ServerUtils plugin) {
         this.plugin = plugin;
     }
 
+    private static final Logger log = Logger.getLogger("Minecraft");
+
+    public static Economy econ = null;
+    public static Permission perms = null;
+
     private ArrayList<CurrentEditMode> playersEditing;
 
-	@Override
-	public void onEnable() {
+    @Override
+    public void onEnable() {
 
         File config = new File(this.getDataFolder(), "config.yml");
         if (!config.exists()) {
@@ -28,25 +38,39 @@ public class ServerUtils extends JavaPlugin {
             System.out.println("[" + getDescription().getName() + "] No config.yml detected, config.yml created");
         } //Checks if config.yml exists and creates if false
 
+        //Sets up Vault Economy
+        if (!setupEconomy()) {
+            log.severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        }
+
+        //Sets up Vault Permissions
+        if (!setupPermissions()) {
+            log.severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        }
+
         playersEditing = new ArrayList<CurrentEditMode>();
 
         getCommand("horse").setExecutor(new HorseProtectionCommands(this));
         getServer().getPluginManager().registerEvents(new HorseInteractListener(this), this);
         getServer().getPluginManager().registerEvents(new HorseDamageListener(this), this);
 
-		this.getLogger().info(
-				"[" + getDescription().getName() + "] "
-						+ getDescription().getName() + " "
-						+ getDescription().getVersion() + " is enabled!");
-	} // Logs to console that plugin is enabled
+        this.getLogger().info(
+                "[" + getDescription().getName() + "] "
+                        + getDescription().getName() + " "
+                        + getDescription().getVersion() + " is enabled!");
+    } // Logs to console that plugin is enabled
 
-	@Override
-	public void onDisable() {
-		this.getLogger().info(
-				"[" + getDescription().getName() + "] "
-						+ getDescription().getName() + " "
-						+ getDescription().getVersion() + " is disabled!");
-	} // Logs to console that plugin is disabled
+    @Override
+    public void onDisable() {
+        this.getLogger().info(
+                "[" + getDescription().getName() + "] "
+                        + getDescription().getName() + " "
+                        + getDescription().getVersion() + " is disabled!");
+    } // Logs to console that plugin is disabled
 
 
     //Horse Protection - OresomeCraft plugin by @Zachoz and Pegabeavercorn
@@ -86,5 +110,25 @@ public class ServerUtils extends JavaPlugin {
             }
         }
         return null;
+    }
+
+    //Vault - Economy Plugin
+
+    private boolean setupEconomy() {
+        if (getServer().getPluginManager().getPlugin("Vault") == null) {
+            return false;
+        }
+        RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
+        if (rsp == null) {
+            return false;
+        }
+        econ = rsp.getProvider();
+        return econ != null;
+    }
+
+    private boolean setupPermissions() {
+        RegisteredServiceProvider<Permission> rsp = getServer().getServicesManager().getRegistration(Permission.class);
+        perms = rsp.getProvider();
+        return perms != null;
     }
 }

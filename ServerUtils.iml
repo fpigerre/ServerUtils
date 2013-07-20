@@ -10,6 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.bukkit:craftbukkit:1.6.1-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: net.milkbowl:vault:1.2.27" level="project" />
   </component>
 </module>
 

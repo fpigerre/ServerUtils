@@ -4,17 +4,21 @@
     <list default="true" id="78804a33-1a2a-409f-86a3-e2226e548afc" name="Default" comment="" />
     <ignored path="ServerUtils.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374134554765" ignored="false" />
+    <file path="/Dummy.txt" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374275503807" ignored="false" />
     <file path="/OpCommand.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374059384203" ignored="false" />
     <file path="/PluginCommand.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374059660795" ignored="false" />
     <file path="/QuestionCommand.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374059577068" ignored="false" />
-    <file path="/ServerUtils.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374137250783" ignored="false" />
+    <file path="/ServerUtils.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374281384077" ignored="false" />
     <file path="/config.yml" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374137744112" ignored="false" />
     <file path="/PartyCommand.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374138066963" ignored="false" />
     <file path="/HorseProtectionCommands.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374136384720" ignored="false" />
     <file path="/CurrentEditMode.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374137190031" ignored="false" />
     <file path="/HorseDamageListener.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374135003493" ignored="false" />
     <file path="/HorseInteractListener.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374136417162" ignored="false" />
+    <file path="/CreditCommand.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374285277974" ignored="false" />
+    <file path="/plugin.yml" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374276002348" ignored="false" />
+    <file path="/pom.xml" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374276089346" ignored="false" />
+    <file path="/RealEconomy.java" changelist="78804a33-1a2a-409f-86a3-e2226e548afc" time="1374284647929" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -65,7 +70,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -75,10 +79,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PartyCommand.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/PartyCommand.java">
+      <file leaf-file-name="CreditCommand.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/CreditCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="72" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.66056573">
+            <state line="30" column="38" selection-start="946" selection-end="946" vertical-scroll-proportion="0.84858567">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealEconomy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/RealEconomy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/ServerUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="74" selection-start="4602" selection-end="4602" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/perks/FestiveArrows.java" />
         <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/OpCommand.java" />
         <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/QuestionCommand.java" />
         <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/PluginCommand.java" />
@@ -114,10 +139,21 @@
         <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/horseprotection/HorseDamageListener.java" />
         <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/horseprotection/HorseInteractListener.java" />
         <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/horseprotection/HorseProtectionCommands.java" />
-        <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/ServerUtils.java" />
         <option value="$PROJECT_DIR$/config.yml" />
         <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/PartyCommand.java" />
+        <option value="$PROJECT_DIR$/plugin.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/ServerUtils.java" />
+        <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/RealEconomy.java" />
+        <option value="$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/CreditCommand.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -152,8 +188,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,12 +286,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="credits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serverutils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +433,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1305" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,41 +517,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/PartyCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="66" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/OpCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="248" selection-end="637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/PluginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="24" selection-start="870" selection-end="870" vertical-scroll-proportion="0.67886853">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="65" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.7454243">
           <folding />
         </state>
       </provider>
@@ -514,31 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/horseprotection/HorseProtectionCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="170" selection-end="170" vertical-scroll-proportion="0.1734694">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/ServerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="25" selection-start="2589" selection-end="2589" vertical-scroll-proportion="0.5657238">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/OpCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="629" selection-end="629" vertical-scroll-proportion="0.42429283">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/horseprotection/CurrentEditMode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="53" selection-end="170" vertical-scroll-proportion="0.056572378">
@@ -555,25 +556,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="169" selection-end="169" vertical-scroll-proportion="0.22628951" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/perks/FestiveArrows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="58" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+        <state line="31" column="58" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.8768719">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/horseprotection/HorseProtectionCommands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="169" selection-end="169" vertical-scroll-proportion="0.22628951">
-          <folding />
+        <state line="28" column="54" selection-start="838" selection-end="838" vertical-scroll-proportion="-3.4812925">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/PartyCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="72" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.66056573">
+        <state line="39" column="57" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.6173045">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/PluginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="29" selection-start="902" selection-end="902" vertical-scroll-proportion="0.7354409">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/commands/OpCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="629" selection-end="629" vertical-scroll-proportion="0.42429283">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.123128116">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="28" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.60399336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/ServerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="74" selection-start="4602" selection-end="4602" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/RealEconomy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/psgs/serverutils/credits/CreditCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="38" selection-start="946" selection-end="946" vertical-scroll-proportion="0.84858567">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

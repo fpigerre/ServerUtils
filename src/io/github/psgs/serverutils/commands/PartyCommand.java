@@ -27,7 +27,7 @@ public class PartyCommand implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("party")) {
             if (sender.isOp() || sender.hasPermission("utils.party")) {
-                w.playEffect(Effect.STEP_SOUND, 79);
+                /*w.playEffect(Effect.STEP_SOUND, 79);
 
                 FireworkMeta fireworkMeta = (FireworkMeta) (new ItemStack(
                         Material.FIREWORK)).getItemMeta();
@@ -37,7 +37,7 @@ public class PartyCommand implements CommandExecutor {
                 fireworkMeta.addEffect(FireworkEffect.builder().with(FireworkEffect.Type.BURST)
                         .withColor(Color.RED).withColor(Color.WHITE)
                         .withColor(Color.BLUE).withTrail().build());
-                firework.setFireworkMeta(fireworkMeta);
+                firework.setFireworkMeta(fireworkMeta);*/
 
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");
