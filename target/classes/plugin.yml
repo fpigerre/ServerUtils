@@ -1,0 +1,24 @@
+name: ServerUtils
+main: io.github.psgs.serverutils.ServerUtils
+version: DEV
+author: psgs
+depend: [Vault]
+
+commands:
+   op:
+      description: This command ops a user.
+
+   party:
+      description: This command parties!
+
+   plugins:
+      description: This command shows the server plugins.
+
+   ?:
+      description: This command shows the server plugins and help.
+
+   credits:
+      description: This command shows a player's credits.
+
+   horse:
+      description: This command shows the HorseProtection commands.

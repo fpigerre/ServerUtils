@@ -30,7 +30,7 @@ public class PartyCommand implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("party")) {
             if (sender.isOp() || sender.hasPermission("utils.party")) {
-                w.playEffect(hub, Effect.STEP_SOUND, 29);
+                w.playEffect(hub, Effect.STEP_SOUND, 351,5);
 
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");
