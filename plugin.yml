@@ -1,32 +1,24 @@
 name: ServerUtils
 main: io.github.psgs.serverutils.ServerUtils
 version: DEV
-load: STARTUP
-loadbefore: [Essentials]
 author: psgs
 depend: [Vault]
 
 commands:
    op:
       description: This command ops a user.
-      usage: /<command> <player>
 
    party:
       description: This command parties!
-      usage: /<command>
 
    plugins:
       description: This command shows the server plugins.
-      usage: /<command>
 
    ?:
       description: This command shows the server plugins and help.
-      usage: /<command>
 
    credits:
       description: This command shows a player's credits.
-      usage: /<command> <player>
 
    horse:
       description: This command shows the HorseProtection commands.
-      usage: /<command> <args>

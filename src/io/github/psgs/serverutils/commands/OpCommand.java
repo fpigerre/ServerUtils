@@ -10,7 +10,7 @@ public class OpCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("op")) {
-            if (sender.isOp() || sender.hasPermission("blah")) {
+            if (sender.isOp() || sender.hasPermission("bukkit.command.op") || sender.hasPermission("bukkit.command.op.take") || sender.hasPermission("bukkit.command.op.give")) {
                 //Do Nothing
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");

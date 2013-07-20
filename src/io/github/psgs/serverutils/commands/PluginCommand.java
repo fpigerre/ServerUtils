@@ -10,7 +10,7 @@ public class PluginCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("plugins")) {
-            if (sender.isOp() || sender.hasPermission("blah")) {
+            if (sender.isOp() || sender.hasPermission("bukkit.command.plugins")) {
                 //Do Nothing
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");
@@ -18,7 +18,7 @@ public class PluginCommand implements CommandExecutor {
         }
 
         if (cmd.getName().equalsIgnoreCase("?")) {
-            if (sender.isOp() || sender.hasPermission("blah")) {
+            if (sender.isOp() || sender.hasPermission("bukkit.command.plugins")) {
                 //Do Nothing
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");
