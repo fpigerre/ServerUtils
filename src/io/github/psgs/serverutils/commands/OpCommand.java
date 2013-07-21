@@ -5,8 +5,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.permissions.ServerOperator;
-import org.bukkit.entity.Player;
 
 public class OpCommand implements CommandExecutor {
 
@@ -25,6 +23,7 @@ public class OpCommand implements CommandExecutor {
                 if (sender.isOp() || sender.hasPermission("bukkit.command.op") || sender.hasPermission("bukkit.command.op.give")) {
                     final String name = args[0];
                     plugin.getServer().getPlayer(name).setOp(true);
+                    sender.sendMessage(args[0] + " has been Opped!");
                 }
             }
         }

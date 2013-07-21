@@ -5,14 +5,7 @@ import org.bukkit.*;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Firework;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.FireworkMeta;
 import org.bukkit.Effect;
-import org.bukkit.Material;
 
 public class PartyCommand implements CommandExecutor {
 
@@ -30,7 +23,7 @@ public class PartyCommand implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("party")) {
             if (sender.isOp() || sender.hasPermission("utils.party")) {
-                w.playEffect(hub, Effect.STEP_SOUND, 351,5);
+                w.playEffect(hub, Effect.STEP_SOUND, 152);
 
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");

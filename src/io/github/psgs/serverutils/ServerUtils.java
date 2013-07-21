@@ -4,9 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-import io.github.psgs.serverutils.commands.OpCommand;
-import io.github.psgs.serverutils.commands.PartyCommand;
-import io.github.psgs.serverutils.commands.PluginCommand;
+import io.github.psgs.serverutils.commands.*;
 import io.github.psgs.serverutils.credits.CreditCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -18,11 +16,11 @@ import net.milkbowl.vault.permission.Permission;
 
 public class ServerUtils extends JavaPlugin {
 
-    ServerUtils plugin;
-
-    public void ServerUtils(ServerUtils plugin) {
-        this.plugin = plugin;
+    public ServerUtils() {
+        instance = this;
     }
+
+    public static ServerUtils instance;
 
     private static final Logger log = Logger.getLogger("Minecraft");
 
@@ -44,13 +42,6 @@ public class ServerUtils extends JavaPlugin {
 
         // Sets up Vault Economy
         setupEconomy();
-        /*if (!setupEconomy()) {
-            log.severe(String.format(
-					"[%s] - Disabled due to no Vault dependency found!",
-					getDescription().getName()));
-			getServer().getPluginManager().disablePlugin(this);
-			return;
-		}*/
 
         playersEditing = new ArrayList<CurrentEditMode>();
 
@@ -65,6 +56,8 @@ public class ServerUtils extends JavaPlugin {
         getCommand("op").setExecutor(new OpCommand(this));
         getCommand("party").setExecutor(new PartyCommand(this));
         getCommand("credits").setExecutor(new CreditCommand(this));
+        getCommand("sendall").setExecutor(new SendAllCommand(this));
+        getCommand("overkick").setExecutor(new OverKickCommand(this));
 
         this.getLogger().info(
                 "[" + getDescription().getName() + "] "
@@ -119,7 +112,6 @@ public class ServerUtils extends JavaPlugin {
     }
 
     // Vault - Economy Plugin
-
     private boolean setupEconomy() {
         if (getServer().getPluginManager().getPlugin("Vault") == null) {
             return false;
@@ -131,5 +123,10 @@ public class ServerUtils extends JavaPlugin {
         }
         econ = rsp.getProvider();
         return econ != null;
+    }
+
+    //Instance
+    public static ServerUtils getInstance() {
+        return instance;
     }
 }
