@@ -56,7 +56,6 @@ public class ServerUtils extends JavaPlugin {
         getCommand("op").setExecutor(new OpCommand(this));
         getCommand("party").setExecutor(new PartyCommand(this));
         getCommand("credits").setExecutor(new CreditCommand(this));
-        getCommand("sendall").setExecutor(new SendAllCommand(this));
         getCommand("overkick").setExecutor(new OverKickCommand(this));
 
         this.getLogger().info(

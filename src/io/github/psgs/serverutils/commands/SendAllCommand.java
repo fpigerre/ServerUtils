@@ -41,6 +41,8 @@ public class SendAllCommand implements CommandExecutor {
                     } catch (IOException ex) { /* Impossible */ }
                     p.sendPluginMessage(ServerUtils.getInstance(), "BungeeCord", b.toByteArray());
                 }
+            } else {
+                sender.sendMessage(ChatColor.RED + "You don't have the perms for this!");
             }
         }
         return false;

@@ -24,6 +24,7 @@ public class PartyCommand implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("party")) {
             if (sender.isOp() || sender.hasPermission("utils.party")) {
                 w.playEffect(hub, Effect.STEP_SOUND, 152);
+                sender.sendMessage(ChatColor.AQUA + "P" + ChatColor.RED + "A" + ChatColor.GOLD + "R" + ChatColor.BLUE + "T" + ChatColor.GREEN + "Y" + ChatColor.YELLOW + "!");
 
             } else {
                 sender.sendMessage(ChatColor.RED + "I don't think so!");
